@@ -21,9 +21,9 @@
     "extraLarge": 22
   },
   "fontWeights": {
-    "lighter": 200,
+    "lighter": 400,
     "default": 400,
-    "bolder": 700
+    "bolder": 400
   },
   "containerStyles": {
     "default": {
@@ -93,7 +93,7 @@
     "actionsOrientation": "vertical"
   },
   "adaptiveCard": {
-    "allowCustomStyle": false
+    "allowCustomStyle": true
   },
   "imageSet": {
     "imageSize": "medium",

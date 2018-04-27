@@ -395,6 +395,21 @@
                 text-align: inherit;
             }
         }
+        
+        &.wc-adaptive-card {
+          border: none !important;
+        }
+        
+        .ac-container {
+          padding: 0 !important;
+          
+          div {
+            font-size: $fontSize !important;
+            font-weight: normal !important;
+            white-space: normal !important;
+          }
+          
+        }
     }
 
 /* alternate chat sizes */
