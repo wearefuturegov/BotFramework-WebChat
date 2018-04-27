@@ -565,11 +565,24 @@
     .wc-message-from-bot {
         float: left;
         margin-left: 8px;
+        
+        &::after {
+          content: '';
+          background:url('img/icon.png');
+          width: 70px;
+          height: 70px;
+          display: block;
+          background-size: 70px;
+          position: absolute;
+          top: 0;
+          left: 0;
+        }
     }
 
     .wc-message-from-bot .wc-message-content {
         background-color: $c_messageFromThem;
         color: $c00;
+        margin-left: 85px;
     }
 
     .wc-message-from-bot svg.wc-message-callout path {
@@ -581,7 +594,7 @@
     }
 
     .wc-message-from-bot svg.wc-message-callout {
-        left: -6px;
+        left: 79px;
     }
 
 /* console */
