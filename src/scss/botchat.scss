@@ -47,6 +47,15 @@
         right: 0;
         top: 0;
         z-index: 1;
+        
+        img {
+          position: absolute;
+          right: 0;
+          top: 0;
+          height: $headerTotalHeight - $headerPaddingTop - $headerPaddingBottom;
+          padding: $headerPaddingTop $headerPaddingRight $headerPaddingBottom $headerPaddingLeft;
+          background-color: #fff;
+        }
     }
 
     .wc-time {

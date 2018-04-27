@@ -1,0 +1,50 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Bot Chat</title>
+
+    <link href="botchat.css" rel="stylesheet" />
+    <link href="botchat-fullwindow.css" rel="stylesheet" />
+
+    <style>
+      html, body {
+        height: 100%;
+        margin: 0;
+        overflow: hidden;
+        padding: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="BotChatGoesHere"></div>
+    <script src="botchat.js"></script>
+    <script>
+      const params = BotChat.queryParams(location.search);
+
+      const user = {
+        id: params['userid'] || 'userid',
+        name: params['username'] || 'username'
+      };
+
+      const bot = {
+        id: params['botid'] || 'botid',
+        name: params['botname'] || 'botname'
+      };
+
+      window['botchatDebug'] = params['debug'] && params['debug'] === 'true';
+
+      BotChat.App({
+        bot: bot,
+        resize: 'window',
+        user: user,
+
+        directLine: {
+          secret: 'P4g_ATB6tvc.cwA.PHI.8_HMhP0Vwg7t1i3wqKbVW8eR5I7s4z_Y3nJOR-9zNz0',
+          token: 'P4g_ATB6tvc.cwA.5N8.p-cpydtbmQzZlIrZNWjTcmAH-Jpu4GPywv8l-V-AvJM',
+          webSocket: true
+        }
+      }, document.getElementById('BotChatGoesHere'));
+    </script>
+  </body>
+</html>

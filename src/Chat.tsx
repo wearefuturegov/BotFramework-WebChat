@@ -271,6 +271,7 @@ export class Chat extends React.Component<ChatProps, {}> {
                         !!state.format.chatTitle &&
                             <div className="wc-header">
                                 <span>{ typeof state.format.chatTitle === 'string' ? state.format.chatTitle : state.format.strings.title }</span>
+                                <img src="../../img/logo.png" alt="Newcastle City Council" />
                             </div>
                     }
                     <MessagePane>
