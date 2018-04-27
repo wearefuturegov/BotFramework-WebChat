@@ -12,13 +12,13 @@
     "lineThickness": 1,
     "lineColor": "#cccccc"
   },
-  "fontFamily": "\"Segoe UI\", sans-serif",
+  "fontFamily": "\"Museo Sans\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
   "fontSizes": {
-    "small": 12,
-    "default": 13,
-    "medium": 15,
-    "large": 17,
-    "extraLarge": 19
+    "small": 15,
+    "default": 16,
+    "medium": 18,
+    "large": 20,
+    "extraLarge": 22
   },
   "fontWeights": {
     "lighter": 200,
@@ -27,7 +27,7 @@
   },
   "containerStyles": {
     "default": {
-      "backgroundColor": "#00000000",
+      "backgroundColor": "#eceff1",
       "foregroundColors": {
         "default": {
           "default": "#000000",
@@ -90,8 +90,7 @@
       "actionMode": "inline",
       "inlineTopMargin": 8
     },
-    "actionsOrientation": "vertical",
-    "actionAlignment": "stretch"
+    "actionsOrientation": "vertical"
   },
   "adaptiveCard": {
     "allowCustomStyle": false

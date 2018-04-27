@@ -30,7 +30,7 @@ $hostConfig: (
   ),
   containerStyles: (
     default: (
-      backgroundColor: "#00000000",   //using 8 digit hex Adaptive Card color format for transparent ("Transparent" will not be recognized)
+      backgroundColor: $c09,   //using 8 digit hex Adaptive Card color format for transparent ("Transparent" will not be recognized)
       foregroundColors: (
         default: (
           default: $c00,
@@ -93,8 +93,7 @@ $hostConfig: (
       actionMode: "inline",
       inlineTopMargin: $separation
     ),
-    actionsOrientation: "vertical",
-    actionAlignment: "stretch"
+    actionsOrientation: "vertical"
   ),
   adaptiveCard: (
     allowCustomStyle: false
