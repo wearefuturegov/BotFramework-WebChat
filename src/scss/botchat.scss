@@ -562,9 +562,10 @@
 
 /* from bot */
 
-    .wc-message-from-bot {
+    .wc-message.wc-message-from-bot {
         float: left;
         margin-left: 8px;
+        min-height: 100px;
         
         &::after {
           content: '';
@@ -576,6 +577,8 @@
           position: absolute;
           top: 0;
           left: 0;
+          border: 1px solid #000;
+          border-radius: 35px;
         }
     }
 
@@ -595,6 +598,11 @@
 
     .wc-message-from-bot svg.wc-message-callout {
         left: 79px;
+    }
+    
+    .wc-message-from.wc-message-from-bot {
+      margin-left: 95px;
+      padding-top: 6px;
     }
 
 /* console */
