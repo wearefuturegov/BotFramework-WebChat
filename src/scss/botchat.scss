@@ -34,10 +34,11 @@
     }
 
     .wc-header {
-        background-color: $c_brand;
+        background-color: #fff;
+        border-bottom: 5px solid $c_brand;
         box-shadow: 0 1px $c_shadow;
         box-sizing: content-box;
-        color: $c01;
+        color: #535860;
         font-weight: 500;
         height: $headerTotalHeight - $headerPaddingTop - $headerPaddingBottom;
         left: 0;
@@ -47,6 +48,11 @@
         right: 0;
         top: 0;
         z-index: 1;
+        
+        span {
+          line-height: $headerTotalHeight - $headerPaddingTop - $headerPaddingBottom;
+          font-size: 18px;
+        }
         
         img {
           position: absolute;
@@ -73,7 +79,7 @@
         padding: 10px;
         position: absolute;
         right: 0;
-        top: $headerTotalHeight;
+        top: $headerTotalHeight + $headerPaddingBottom;
         transition: transform $actionTransition;
 
         &.no-header {
