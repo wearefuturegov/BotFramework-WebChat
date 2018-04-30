@@ -403,7 +403,7 @@
         .ac-container {
           padding: 0 !important;
           
-          div {
+          div, .ac-pushButton {
             font-size: $fontSize !important;
             font-weight: normal !important;
             white-space: normal !important;
