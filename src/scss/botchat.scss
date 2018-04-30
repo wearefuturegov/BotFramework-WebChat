@@ -577,22 +577,20 @@
         &::after {
           content: '';
           background:url('img/icon.png');
-          width: 60px;
-          height: 60px;
+          width: 40px;
+          height: 40px;
           display: block;
-          background-size: 60px;
+          background-size: 40px;
           position: absolute;
           top: 0;
           left: 0;
-          border: 1px solid #000;
-          border-radius: 30px;
         }
     }
 
     .wc-message-from-bot .wc-message-content {
         background-color: $c_messageFromThem;
         color: $c00;
-        margin-left: 85px;
+        margin-left: 55px;
     }
 
     .wc-message-from-bot svg.wc-message-callout path {
@@ -604,11 +602,11 @@
     }
 
     .wc-message-from-bot svg.wc-message-callout {
-        left: 79px;
+        left: 48px;
     }
     
     .wc-message-from.wc-message-from-bot {
-      margin-left: 85px;
+      margin-left: 51px;
       padding-top: 6px;
     }
 
