@@ -79,7 +79,7 @@
         padding: 10px;
         position: absolute;
         right: 0;
-        top: $headerTotalHeight + $headerPaddingBottom;
+        top: $headerTotalHeight;
         transition: transform $actionTransition;
 
         &.no-header {
@@ -89,6 +89,7 @@
 
     .wc-message-group-content {
         overflow: hidden;
+        padding: 13px 0;
     }
 
     .wc-suggested-actions {
@@ -576,15 +577,15 @@
         &::after {
           content: '';
           background:url('img/icon.png');
-          width: 70px;
-          height: 70px;
+          width: 60px;
+          height: 60px;
           display: block;
-          background-size: 70px;
+          background-size: 60px;
           position: absolute;
           top: 0;
           left: 0;
           border: 1px solid #000;
-          border-radius: 35px;
+          border-radius: 30px;
         }
     }
 
@@ -607,7 +608,7 @@
     }
     
     .wc-message-from.wc-message-from-bot {
-      margin-left: 95px;
+      margin-left: 85px;
       padding-top: 6px;
     }
 
