@@ -17,7 +17,7 @@
     </style>
   </head>
   <body>
-    <div id="BotChatGoesHere"></div>
+    <div id="chat" role="log" aria-atomic="false"></div>
     <script src="botchat.js"></script>
     <script>
       const params = BotChat.queryParams(location.search);
@@ -44,7 +44,7 @@
           token: 'P4g_ATB6tvc.cwA.5N8.p-cpydtbmQzZlIrZNWjTcmAH-Jpu4GPywv8l-V-AvJM',
           webSocket: true
         }
-      }, document.getElementById('BotChatGoesHere'));
+      }, document.getElementById('chat'));
     </script>
   </body>
 </html>
