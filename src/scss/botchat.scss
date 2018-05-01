@@ -516,6 +516,7 @@
             position: absolute;
             top: 50%;
             width: 28px;
+            z-index: 100;
         }
 
         button.scroll:disabled {
