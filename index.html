@@ -23,13 +23,13 @@
       const params = BotChat.queryParams(location.search);
 
       const user = {
-        id: ' ',
-        name: ' '
+        id: params['userid'] || 'userid',
+        name: params['username'] || 'username'
       };
 
       const bot = {
-        id: ' ',
-        name: ' '
+        id: params['botid'] || 'botid',
+        name: params['botname'] || 'botname'
       };
 
       window['botchatDebug'] = params['debug'] && params['debug'] === 'true';
