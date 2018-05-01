@@ -416,6 +416,15 @@
             white-space: normal !important;
           }
           
+          .ac-pushButton {
+            border-radius: 7px;
+            border: 1px solid #a0a1a1;
+            
+            &:hover {
+              border-color: #206CA6;
+            }
+          }
+          
         }
     }
 
