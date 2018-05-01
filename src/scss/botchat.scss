@@ -649,7 +649,12 @@
             padding: 0;
             resize: none;
             width: 100%;
+            
+            &::placeholder {
+              font-style: italic;
+            }
         }
+
 
         &.has-text .wc-send svg {
             fill: $c07;
@@ -712,8 +717,13 @@
 
         .wc-send {
             svg {
-                height: 18px;
+                height: 27px;
                 width: 27px;
+                margin: 0 11px;
+                
+                #bg {
+                  fill: #fff;
+                }
             }
         }
 
@@ -729,7 +739,14 @@
     }
 
     .wc-console.has-text .wc-send svg {
-        fill: $c07;
+        #fg {
+          stroke: #2d90d2;
+          stroke-width: 2px;
+        }
+        
+        #bg {
+          fill: #95d5f4;
+        }
     }
 
 /* animation */
