@@ -407,6 +407,15 @@
           border: none !important;
         }
         
+        &.hero {
+          background-color: transparent;
+            
+          .ac-container div:nth-child(3) {
+            font-weight: bold !important;
+            font-size: 1.1em !important;
+          }
+        }
+        
         .ac-container {
           padding: 0 !important;
           
@@ -425,6 +434,14 @@
             }
           }
           
+          .ac-image {
+            img {
+              width: auto !important;
+              height: 100px !important;
+              margin: 0 auto;
+            }
+          }
+                    
         }
     }
 
@@ -523,11 +540,54 @@
         }
 
         .wc-hscroll > ul {
-            margin-left: -4px;
+            display: table;
+            table-layout: fixed;
+            width: 100%;
+            border-spacing: 10px;
         }
 
         .wc-hscroll > ul > li {
             padding: 0 4px;
+            border: 1px solid #ccc !important;
+            background-color: #fff;
+            width: 200px;
+            font-size: 14px !important;
+            display: table-cell;
+            position: relative;
+            height: 340px;
+            
+            .ac-image {
+              border-bottom: 1px solid #ccc;
+              padding: 5px 0;
+            }
+            
+            .ac-container, div {
+              background-color: #fff;
+            }
+            
+            .ac-pushButton {
+              position: absolute;
+              bottom: 15px;
+              width: 200px;
+            }
+            
+            .ac-container {
+              & div:nth-child(5) {
+                margin: 0 15px;
+                color: #8e8e8e !important;
+              }
+              .ac-container {
+                & div:nth-child(3) {
+                  font-weight: bold !important;
+                  margin: 4px 15px;
+                  background-color: #fff;
+                }
+              }
+            }
+            
+            .wc-adaptive-card {
+              width: 100%;
+            }
         }
 
         .wc-hscroll > ul > li:last-child {
