@@ -32,7 +32,7 @@ const localizedStrings: LocalizedStrings = {
         messageRetry: "retry",
         messageFailed: "couldn't send",
         messageSending: "sending",
-        timeSent: " at %1",
+        timeSent: " Sent at %1",
         consolePlaceholder: "Type your message...",
         listeningIndicator: "Listening...",
         uploadFile: "Upload file",
