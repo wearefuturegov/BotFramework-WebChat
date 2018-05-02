@@ -4,8 +4,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <title>Bot Chat</title>
 
-    <link href="botchat.css" rel="stylesheet" />
-    <link href="botchat-fullwindow.css" rel="stylesheet" />
+    <link href="./botchat.css" rel="stylesheet" />
+    <link href="./botchat-fullwindow.css" rel="stylesheet" />
 
     <style>
       html, body {
@@ -18,34 +18,56 @@
   </head>
   <body>
     <div id="chat" role="log" aria-atomic="false"></div>
-    <script src="botchat.js"></script>
     <script>
-      const params = BotChat.queryParams(location.search);
+      var script = document.createElement('script');
+      var src;
+      
+      function check() {
+        "use strict";
 
-      const user = {
-        id: params['userid'] || 'userid',
-        name: params['username'] || 'username'
-      };
+        try { eval("var foo = (x)=>x+1"); }
+        catch (e) { return false; }
+        return true;
+      }
 
-      const bot = {
-        id: params['botid'] || 'botid',
-        name: params['botname'] || 'botname'
-      };
+      if (check()) {
+        console.log('yay')
+        src = './botchat.js';
+      } else {
+        src = './botchat-es5.js';
+      }
+      
+      script.src = src;
+      script.onload = function() {
+        const params = BotChat.queryParams(location.search);
 
-      window['botchatDebug'] = params['debug'] && params['debug'] === 'true';
+        const user = {
+          id: params['userid'] || 'userid',
+          name: params['username'] || 'username'
+        };
 
-      BotChat.App({
-        bot: bot,
-        resize: 'window',
-        user: user,
-        showUploadButton: false,
+        const bot = {
+          id: params['botid'] || 'botid',
+          name: params['botname'] || 'botname'
+        };
 
-        directLine: {
-          secret: 'P4g_ATB6tvc.cwA.PHI.8_HMhP0Vwg7t1i3wqKbVW8eR5I7s4z_Y3nJOR-9zNz0',
-          token: 'P4g_ATB6tvc.cwA.5N8.p-cpydtbmQzZlIrZNWjTcmAH-Jpu4GPywv8l-V-AvJM',
-          webSocket: true
-        }
-      }, document.getElementById('chat'));
+        window['botchatDebug'] = params['debug'] && params['debug'] === 'true';
+
+        BotChat.App({
+          bot: bot,
+          resize: 'window',
+          user: user,
+          showUploadButton: false,
+
+          directLine: {
+            secret: 'P4g_ATB6tvc.cwA.PHI.8_HMhP0Vwg7t1i3wqKbVW8eR5I7s4z_Y3nJOR-9zNz0',
+            token: 'P4g_ATB6tvc.cwA.5N8.p-cpydtbmQzZlIrZNWjTcmAH-Jpu4GPywv8l-V-AvJM',
+            webSocket: true
+          }
+        }, document.getElementById('chat'));
+      }
+      
+      document.body.appendChild(script);
     </script>
   </body>
 </html>
