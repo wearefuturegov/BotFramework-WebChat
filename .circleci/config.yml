@@ -35,5 +35,11 @@ jobs:
         
       # run tests!
       - run:
-          - npm run build
-          - ./update.sh
+          name: Build JS and CSS
+          command: |
+            npm run build
+      
+      - run:
+          name: Upload to Azure
+          command:
+            ./update.sh
