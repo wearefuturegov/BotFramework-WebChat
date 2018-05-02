@@ -1,4 +1,3 @@
-az storage blob list --account-name=$ACCOUNT_NAME --container-name=virtual-advisor --account-key=$ACCOUNT_KEY --connection-string=$CONNECTION_STRING
 az storage blob upload -f index.html -c virtual-advisor -n index.html --account-name=$ACCOUNT_NAME --account-key=$ACCOUNT_KEY --connection-string=$CONNECTION_STRING --content-type=text/html
 az storage blob upload -f botchat.js -c virtual-advisor -n botchat.js --account-name=$ACCOUNT_NAME --account-key=$ACCOUNT_KEY --connection-string=$CONNECTION_STRING --content-type=application/javascript
 az storage blob upload -f botchat-es5.js -c virtual-advisor -n botchat-es5.js --account-name=$ACCOUNT_NAME --account-key=$ACCOUNT_KEY --connection-string=$CONNECTION_STRING --content-type=application/javascript
