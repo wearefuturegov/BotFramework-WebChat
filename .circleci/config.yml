@@ -26,6 +26,7 @@ jobs:
             sudo pip install --upgrade pip
             sudo pip install --user azure-cli
             echo "export PATH=/root/.local/bin:$PATH" >> ~/.bashrc
+            source ~/.bashrc
             
 
       # Download and cache dependencies
